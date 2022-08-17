@@ -18,8 +18,7 @@ import java.util.Scanner;
             System.out.println("Enter b2: ");
             boolean b2 = scan.nextBoolean();
             System.out.println("result : "+compare(b1,b2));
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             System.out.println("xx");
         }
     }

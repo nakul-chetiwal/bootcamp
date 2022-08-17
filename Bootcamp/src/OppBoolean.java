@@ -5,8 +5,10 @@
     Expected output:
         Opposite of "true" is "false"
  */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 class OppBoolean {
     public static void main(String[] args) {
         try {
@@ -14,14 +16,13 @@ class OppBoolean {
             System.out.println("Please Enter Any Boolean Value: ");
             boolean bValue = scan.nextBoolean();
             System.out.println("The Opposite Value of " + bValue + ": " + reverseBoolean(bValue));
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             System.out.println("Please Enter True or False");
         }
     }
-    static boolean reverseBoolean(boolean bval)
-    {
-       return !bval;
+
+    static boolean reverseBoolean(boolean bval) {
+        return !bval;
 
     }
 }

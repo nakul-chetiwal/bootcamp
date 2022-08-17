@@ -11,37 +11,38 @@
        is 10 greater or equal to 10? - true
 
 */
+
 import java.util.Scanner; // import the Scanner class
 import java.util.InputMismatchException;
+
 public class CompareNumber {
 
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
 
-        float value1=0 ,value2=0;
+        float value1 = 0, value2 = 0;
         // Try catch is used to allow only numbers
         try {
             System.out.println("Enter first number");
             value1 = myObj.nextFloat();
             System.out.println("Enter second number");
             value2 = myObj.nextFloat();
-        }
-        catch (InputMismatchException ex) {
+        } catch (InputMismatchException ex) {
             System.out.println("Only Numbers is allowed");
             System.exit(0);
         }
 
         // checking conditions
-        if (value1 == value2){
+        if (value1 == value2) {
             System.out.println("True");
 
-        }else if (value1 < value2){
+        } else if (value1 < value2) {
             System.out.println("False");
-        }else if (value1 <= value2){
+        } else if (value1 <= value2) {
             System.out.println("True");
-        }else if (value1 > value2){
+        } else if (value1 > value2) {
             System.out.println("False");
-        }else if (value1 >= value2){
+        } else if (value1 >= value2) {
             System.out.println("True");
         }
 

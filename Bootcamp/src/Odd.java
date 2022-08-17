@@ -3,22 +3,22 @@
  */
 
 import java.util.Scanner;
-        import java.util.InputMismatchException;
+import java.util.InputMismatchException;
+
 public class Odd {
     public static void main(String[] args) {
-        try{
+        try {
             Scanner scan = new Scanner(System.in);
             System.out.println("Please Enter Number: ");
             int a = scan.nextInt();
             System.out.println("result : " + OddEven(a));
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             System.out.println("Please enter whole number");
         }
     }
-    static boolean OddEven(int a)
-    {
-        if(a % 2 == 0)
+
+    static boolean OddEven(int a) {
+        if (a % 2 == 0)
             return false;
         else
             return true;
