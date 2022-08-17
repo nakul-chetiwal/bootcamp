@@ -1,5 +1,3 @@
-
-
 /*
 6) Write a program which asks the user to input two whole numbers a and b. Output "true", if one of this condition is true:
         1) a and b is equal
@@ -12,7 +10,6 @@
         a is -1 and b is -1 -> true
         a is 101 and b is 102 -> true
         a is 99 and b is 200 -> false
-
  */
 
 import java.util.Scanner;

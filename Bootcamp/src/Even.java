@@ -5,6 +5,7 @@
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
+
 public class Even {
     public static void main(String[] args) {
         try {
@@ -16,6 +17,7 @@ public class Even {
             System.out.println("Please Enter whole number");
         }
     }
+
     static boolean findOddEven(Integer num) {
         if (num % 2 == 0)
             return true;

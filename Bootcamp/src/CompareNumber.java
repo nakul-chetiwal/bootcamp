@@ -9,17 +9,14 @@
        is 10 less or equal to 10? - true
        is 10 greater than 10? - false
        is 10 greater or equal to 10? - true
-
 */
 
 import java.util.Scanner; // import the Scanner class
 import java.util.InputMismatchException;
 
 public class CompareNumber {
-
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
-
         float value1 = 0, value2 = 0;
         // Try catch is used to allow only numbers
         try {
@@ -27,24 +24,20 @@ public class CompareNumber {
             value1 = myObj.nextFloat();
             System.out.println("Enter second number");
             value2 = myObj.nextFloat();
+            // checking conditions  // without creating function
+            if (value1 == value2) {
+                System.out.println("True");
+            } else if (value1 < value2) {
+                System.out.println("False");
+            } else if (value1 <= value2) {
+                System.out.println("True");
+            } else if (value1 > value2) {
+                System.out.println("False");
+            } else if (value1 >= value2) {
+                System.out.println("True");
+            }
         } catch (InputMismatchException ex) {
             System.out.println("Only Numbers is allowed");
-            System.exit(0);
         }
-
-        // checking conditions
-        if (value1 == value2) {
-            System.out.println("True");
-
-        } else if (value1 < value2) {
-            System.out.println("False");
-        } else if (value1 <= value2) {
-            System.out.println("True");
-        } else if (value1 > value2) {
-            System.out.println("False");
-        } else if (value1 >= value2) {
-            System.out.println("True");
-        }
-
     }
 }
